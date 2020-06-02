@@ -33,4 +33,4 @@ jobs:
       run: npm install -g surge
       
     - name: deployment
-      run: surge ./ Bootcamp_Assignment1.surge.sh ./ --token ${{Bootcamp_First_Assignment_Seret}}
+      run: surge ./ Bootcamp_Assignment1.surge.sh ./ --token ${{Bootcamp_First_Assignment_Secret}}
