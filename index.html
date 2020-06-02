@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="top">
+        <h2 class="top">LATEST PRODUCT</h2>
+        <h2 class="top">SPECIAL PRODUCT</h2>
+        <h2 class="top">BEST SELLER ITEM</h2>
+    </div>
+
+    <div id="Whole">
+        <div class="shoe">
+            <img src="./Images/1.jpg" alt="" class="im" id="im1" > 
+            <div class="middle">
+            <button class="hov">🤎 </button>
+            <button class="hov" id="add1" onclick="addToCart(this),addCrt(this)">Add To Cart</button>
+            <button class="hov">&#8646;</button>
+        </div>
+            <p>lorem isspum dolor dummy</p>
+            $<output id="im1-price">122.00</output>
+        </div>
+        <div class="shoe">
+            <img src="./Images/2.jpeg" alt="" class="im" id="im2">
+            <div class="middle">
+                <button class="hov">🤎 </button>
+                <button class="hov" id="add2" onclick="addToCart(this),addCrt(this)">Add To Cart</button>
+                <button class="hov">&#8646;</button>
+            </div>
+            <p>lorem isspum dolor dummy</p>
+            $<output id="im2-price">132.00</output>
+        </div>
+        <div class="shoe">
+            <img src="./Images/3.jpg" alt="" class="im" id="im3">
+            <div class="middle">
+                <button class="hov">🤎 </button>
+                <button class="hov" id="add3" onclick="addToCart(this),addCrt(this)">Add To Cart</button>
+                <button class="hov">&#8646;</button>
+            </div>
+            <p>lorem isspum dolor dummy</p>
+            $<output id="im3-price">142.00</output>
+        </div>
+        <div class="shoe">
+            <img src="./Images/4.jpeg" alt="" class="im" id="im4" >
+            <div class="middle">
+                <button class="hov">🤎 </button>
+                <button class="hov" id="add4" onclick="addToCart(this),addCrt(this)">Add To Cart</button>
+                <button class="hov">&#8646;</button>
+            </div>
+            <p>lorem isspum dolor dummy</p>
+            $<output id="im4-price">152.00</output>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div id="crt">
+            <div id="crt-up">
+                <h4> <a id="icn"> &#x1F6D2;</a> Shopping Cart</h4>
+                 <output id="itm">0</output> item(s)-$
+                 <output id="price">0.0</output>
+            </div>
+            <div id="crt-low">
+              <table>
+
+                <img src="./Images/2.jpeg" alt="" height="80px" width="80px" id="crt-img">
+                  <tr>
+                      <td>lorem</td>
+                      <td><output id="mul">0</output>x</td>
+                      <td>$<output id="mul2">0.0</output></td>
+                      <td><button class="cut-btn" onclick="clos()">&#x2716;</button></td>
+                  </tr>
+                  <tr>
+                      <td>ippsum dolor</td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>dummy</td>
+                  </tr>
+              </table>
+            </div>
+            <hr>
+            <div id="crt-end">
+              
+            <table>
+                <tr>
+                    <td>Sub Total</td>
+                    <td>$ <output id="subTtl" >0.0</output></td>
+                </tr>
+                <tr>
+                    <td>Eco Tax(-2.00)</td>
+                    <td>$ <output id="EcoT">0.0</output></td>
+                </tr>
+                <tr>
+                    <td>VAT 20%</td>
+                    <td>$ <output id="Vat">0.0</output></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$ <output id="ttl-out">0.0</output></td>
+                </tr>
+                
+            </table>
+            <br>
+
+            </div>
+            <button class="crt-btn">View Cart</button>
+            <button class="crt-btn">Checkout</button>
+
+        </div>
+        <div id="lst">
+            <h3>Shopping Cart (<output id="weight">10.00</output>kg) </h3>
+
+            <table cellspacing="5px" id="lst-crt">
+            <tr>
+                <td>Image</td>
+                <td>Product Name</td>
+                <td>Model</td>
+                <td>Quantity</td>
+                <td>Unit Price</td>
+                <td>Total Price</td>
+            </tr>
+            <tr>
+                <td> <img src="./Images/2.jpeg" alt="" height="80px" width="80px" id="lst-img"></td>
+                <td> <output> lorem ippsum dolor</output> </td>
+                <td> product 11</td>
+                <td> <output id="qun" >0</output> <button id="q-add" onclick="qun()"> &#x293D; </button> <button id="q-rem" onclick="rem()">  &#x24E7;</button> </td>
+                <td> $<output id="prc-unit" >0.0</output> </td>
+                <td> $<output id="ttl">0.0</output></td>
+            </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="clos.js" ></script>
+</html>
